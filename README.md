@@ -3,8 +3,8 @@
 //Step-by-step setup instructions
 
 1. Clone the Repository
-git clone <your-repo-link>
-cd Customer-Request-Tracker
+  - git clone <your-repo-link>
+  - cd Customer-Request-Tracker
 
 Backend Setup :
   - cd server
