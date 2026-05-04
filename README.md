@@ -34,8 +34,9 @@ Frontend Setup :
    - Database : Supabase
   
 5. Architecture :
+   
    Frontend (React UI)
-           
+          -> 
     Axios API Calls
           -> 
    Express Backend (Routes → Controllers)
@@ -46,6 +47,6 @@ Frontend Setup :
           -> 
    React updates UI using state
 
-6. Known Issues / Limitations :
+7. Known Issues / Limitations :
    - No authentication (any user can access)
    
