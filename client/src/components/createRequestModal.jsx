@@ -15,12 +15,12 @@ const CreateRequestModal = ({ isOpen, onClose, refresh }) => {
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
-    const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
       e.preventDefault();
       await API.post("/", form);
       refresh();
       onClose();
-    };
+  };
 
   return (
     <div className="fixed inset-0 bg-black/40 flex items-center justify-center">
