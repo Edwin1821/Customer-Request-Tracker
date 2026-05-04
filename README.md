@@ -35,15 +35,15 @@ Frontend Setup :
   
 5. Architecture :
    Frontend (React UI)
-           ↓
+           
     Axios API Calls
-           ↓
+          -> 
    Express Backend (Routes → Controllers)
-           ↓
+          -> 
    Supabase Database
-           ↓
+          -> 
    Response returned to frontend
-           ↓
+          -> 
    React updates UI using state
 
 6. Known Issues / Limitations :
