@@ -23,7 +23,7 @@ const CreateRequestModal = ({ isOpen, onClose, refresh }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/40 flex items-center justify-center">
+    <div className="fixed inset-0 bg-black/60 flex items-center justify-center">
       <div className="bg-white w-105 rounded-xl p-6 shadow-lg">
         {/* Header */}
         <div className="flex justify-between items-center mb-4">

@@ -18,18 +18,18 @@ const ViewRequestModal = ({ isOpen, onClose, data }) => {
         </button>
 
         {/* Title */}
-        <h2 className="text-lg font-semibold mb-1">
+        <h2 className="text-xl font-semibold">
           {data.title}
         </h2>
 
         {/* User */}
-        <p className="text-sm text-gray-500 mb-3">
+        <p className="text-sm text-gray-700 mb-2">
           From {data.customer_name} ({data.email})
         </p>
 
         {/* Status */}
         <span className="inline-block bg-gray-100 text-sm px-3 py-1 rounded-full mb-3">
-          {data.status}
+          Status: {data.status}
         </span>
 
         {/* Description */}

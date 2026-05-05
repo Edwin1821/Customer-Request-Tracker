@@ -16,29 +16,41 @@ const RequestCard = ({ item, refresh, onView }) => {
   return (
     <div className="bg-white border rounded-xl p-5 flex justify-between items-center shadow-sm mb-3 border-gray-300">
       <div>
-        <h3 className="font-semibold text-gray-900">{item.title}</h3>
+          <h3 className="font-semibold text-gray-900">{item.title}</h3>
 
-        <p className="text-sm text-gray-500">
-          {item.customer_name} • {item.email}
-        </p>
+          <p className="text-sm text-gray-500">
+            {item.customer_name} • {item.email}
+          </p>
 
-        <p className="text-xs text-gray-400 mt-2">
-          {new Date(item.created_at).toLocaleString()}
-        </p>
+           <p className="text-xs text-gray-400 mt-2">
+              {new Date(item.created_at).toLocaleString()}
+           </p>
       </div>
 
       <div className="flex items-center gap-3">
+        <p className={`border border-gray-100 bg-gray-100 m-2 px-3 py-1 rounded-xl text-black text-sm ${
+          item.status === "In Progress"
+          ? "bg-gray-900 text-white"
+          : "bg-gray-100 text-black"
+        }`}
+        >
+          {item.status}
+        </p>
+
         <select
           value={item.status}
           onChange={(e) => updateStatus(e.target.value)}
-          className="border rounded-md px-2 py-1 text-sm cursor-pointer hover:bg-gray-100 border-gray-300"
+          className="border rounded-md px-2 py-1 text-sm cursor-pointer hover:bg-gray-100 border-gray-300 "
         >
           <option className="border border-gray-300">New</option>
           <option className="border border-gray-300">In Progress</option>
           <option className="border border-gray-300">Resolved</option>
         </select>
 
-        <button onClick={()=> onView(item.id)} className="border rounded-md px-2 py-1 cursor-pointer hover:bg-gray-100 border-gray-300">
+        <button
+          onClick={() => onView(item.id)}
+          className="border rounded-md px-2 py-1 cursor-pointer hover:bg-gray-100 border-gray-300"
+        >
           <AiOutlineEye />
         </button>
 

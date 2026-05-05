@@ -8,7 +8,7 @@ const FilterTabs = ({ current, setFilter, counts }) => {
           key={tab}
           onClick={() => setFilter(tab)}
           className={`px-3 py-1.5 rounded-md text-sm border cursor-pointer ${
-            current === tab
+              current === tab
               ? "bg-gray-900 text-white border-gray-900"
               : "bg-white text-gray-700 border-gray-300"
           }`}
