@@ -28,9 +28,9 @@ const RequestCard = ({ item, refresh, onView }) => {
       </div>
 
       <div className="flex items-center gap-3">
-        <p className={`border border-gray-100 bg-gray-100 m-2 px-3 py-1 rounded-xl text-black text-sm ${
+        <p className={`border border-gray-100 bg-gray-100 m-2 px-3 py-[2px] rounded-xl font-semibold text-black text-[12px] ${  
           item.status === "In Progress"
-          ? "bg-gray-900 text-white"
+          ? "bg-gray-900 text-white hover:bg-gray-700"
           : "bg-gray-100 text-black"
         }`}
         >
