@@ -50,3 +50,5 @@ Frontend Setup :
 7. Known Issues / Limitations :
    - No authentication (any user can access)
    
+   <img width="1919" height="905" alt="Screenshot 2026-05-05 133525" src="https://github.com/user-attachments/assets/344e8b7d-7837-48d9-8c90-bd312038da82" />
+
