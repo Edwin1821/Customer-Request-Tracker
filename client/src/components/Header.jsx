@@ -5,10 +5,10 @@ const Header = ({ onCreate }) => {
   return (
     <div className="flex justify-between items-start mb-6">
       <div>
-        <h1 className="text-2xl font-semibold text-gray-900">
+        <h1 className="text-[25px] font-bold text-gray-900">
           Customer Request Tracker
         </h1>
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-gray-600">
           Create, track and resolve customer service requests.
         </p>
       </div>
