@@ -14,7 +14,7 @@ const RequestCard = ({ item, refresh, onView }) => {
   };
 
   return (
-    <div className="bg-white border rounded-xl p-5 flex justify-between items-center shadow-sm mb-3 border-gray-300">
+    <div className="bg-white border rounded-xl p-7 flex justify-between items-center shadow-sm mb-4 border-gray-300">
       <div>
           <h3 className="font-semibold text-gray-900">{item.title}</h3>
 
